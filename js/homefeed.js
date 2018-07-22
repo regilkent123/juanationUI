@@ -6,3 +6,10 @@ $(window).load(function() {
     }, 300);
   });
 });
+
+$ ->
+  $('[data-toggle]').on('click', ->
+    toggle = $(this).addClass('active').attr('data-toggle')
+    $(this).siblings('[data-toggle]').removeClass('active')
+    $('.surveys').removeClass('grid list').addClass(toggle)
+  )
