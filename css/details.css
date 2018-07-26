@@ -94,7 +94,7 @@ h2 {
 /* card meta */
 .card__meta time {
 	font-size: 1.5rem;
-	color: #bbb;
+	color: #aaa;
 	margin-left: 0.8rem;
 }
 
@@ -532,3 +532,51 @@ body {
 .card__article .add:hover {
 		color: black;
 	}
+
+div.navbar {
+  position: relative;
+  width: 115%;
+  right: 100px;
+}
+
+div.navbar ul {
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  bottom: 10px;
+}
+
+div.navbar ul li {
+  float: left;
+}
+
+div.navbar ul li a:not(.user) {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+div.navbar ul li a:not(.user).active {
+  background-color: #a31d0b;
+}
+
+div.navbar ul li a:hover:not(.active) {
+  background-color: #111;
+}
+
+div.navbar ul li img {
+  position: absolute;
+  height: 60px;
+  display: block;
+  right: 50%;
+}
+
+div.navbar ul li img:hover {
+  transform: scale(1.4);
+} 

@@ -6,6 +6,14 @@
   <link rel="stylesheet" href="css/details.css">
 </head>
 <body>
+<div class="navbar">
+        <ul>
+            <li><a class="active" href="">Home</a></li>
+            <li><a href="">Notifications</a></li>
+            <li><a class="user"><img src="" id="user"></a></li>
+            <li style="float:right"><a href="">Logout</a></li>
+        </ul>
+  </div>
     <div class="wrapper">
                 
                 <div class="card radius shadowDepth1">
@@ -14,25 +22,18 @@
                     </div>
 
                     <div class="card__content card__padding">
-                        <div class="card__share">
-                            <div class="card__social">  
-                                <a class="share-icon facebook" href="#"><span class="fa fa-facebook"></span></a>
-                                <a class="share-icon twitter" href="#"><span class="fa fa-twitter"></span></a>
-                                <a class="share-icon googleplus" href="#"><span class="fa fa-google-plus"></span></a>
-                            </div>
-
-                            <a id="share" class="share-toggle share-icon" href="#"></a>
-                        </div>
 
                         <div class="card__meta">
-                            <a href="#">Web Design</a>
-                            <time>17th March</time>
+                            <time>13th November 2013</time>
                         </div>
 
                         <article class="card__article">
                             <h2><a href="#" class="title">TYPHOON YOLONDA SLAPS TACLOBAN SO HARD</a></h2>
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus harum...</p><br>
+                            <p div="article-content">Typhoon ‘Yolanda,’ one of the strongest typhoons on record struck the Philippines, forcing hundreds of thousands from their homes and knocking out power and communications in several provinces. But the nation appeared to avoid a major disaster because the rapidly moving typhoon blew away before wreaking more damage, officials said.
+
+Typhoon “Yolanda” (international name: Haiyan) left the Philippines early Saturday on a path toward Southeast Asia, the U.S. National Oceanic and Atmospheric Administration tweeted. Forecasters said the storm was expected to pick up renewed strength over the South China Sea on its way toward Vietnam. As of 11am, over 100 people are feared dead in the wake of “Yolanda’s” destruction, according to Capt. John Andrews, deputy director general of the Civil Aviation Authority of the Philippines. Typhoon ‘Yolanda,’ one of the strongest typhoons on record struck the Philippines, forcing hundreds of thousands from their homes and knocking out power and communications in several provinces. But the nation appeared to avoid a major disaster because the rapidly moving typhoon blew away before wreaking more damage, officials said.
+                            </p><br>
                               <table style="width:100%">
                                 <tr>
                                   <td>
@@ -115,6 +116,16 @@
                                                 </span>
                                     </span>
                                   </td>
+                                </tr>
+                                <tr class="showform">
+                                <form method="post" action="">  
+                                  <td>
+                                    <input type="text" name="addwants" placeholder="Need">
+                                  </td>
+                                  <td>
+                                    <input type="text" name="addcapacity" placeholder="Capacity"> <button type="submit">Add</button>
+                                  </td>
+                                </form>
                                 </tr>
                                 <tr>
                                   <td>
