@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300, 400");
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background: rgb(209, 210, 211);
+    background-size: cover;
+    text-align: center;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.container input {
+    display: none;
+}
+.container input:checked + label {
+    border: 1px solid #30a6a6;
+}
+.container label {
+    display: block;
+    float: left;
+    margin-right: 10px;
+    width: 100%;
+    border: 1px solid #dddddd;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    background: rgb(255, 255, 255);
+
+    cursor: pointer;
+    transition: box-shadow .15s linear, transform .15s linear;
+}
+.container label:hover {
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+    transition: box-shadow .15s linear, transform .15s linear;
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -o-transform: scale(1.01);
+    transform: scale(1.01);
+}
+.container label span.spec {
+    display: block;
+    text-transform: uppercase;
+    margin: 0 auto 30px;
+    font-size: 10px;
+}
+.container label h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.container label p {
+    font-size: 14px;
+    color: #aaa;
+    line-height: 1.5;
+    font-weight: 300;
+}
+.container label div.author p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 40px;
+}
+.container label div.author ul {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+.container label div.author ul li {
+    list-style: none;
+    float: left;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: red;
+}
+.container label div.author ul li:first-child {
+    margin-right: 10px;
+    background: url("https://res.cloudinary.com/alexiswollseifen-com/image/upload/v1494507856/31998547103_e0d2e65ddf_m_emo00r.jpg") no-repeat;
+    background-size: cover;
+}
+.container label div.author ul li:last-child {
+    background: url("https://res.cloudinary.com/alexiswollseifen-com/image/upload/v1494507978/2687331011_51a1acac77_m_xhycdb.jpg") no-repeat;
+    background-size: cover;
+    background-position: 0px -10px;
+}
+
+.bttncontainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -65px;
+    margin-top: -20px;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+}
+
+.submitpref {
+      background-color: #a31d0b;
+      border: none;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+}
+
+.submitpref:hover{
+    background-color: #111;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+div.navbar {
+  position: relative;
+}
+
+div.navbar ul {
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  bottom: 10px;
+}
+
+div.navbar ul li {
+  float: left;
+}
+
+div.navbar ul li a:not(.user) {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+div.navbar ul li a:not(.user).active {
+  background-color: #a31d0b;
+}
+
+div.navbar ul li a:hover:not(.active) {
+  background-color: #111;
+}
+
+div.navbar ul li img {
+  position: absolute;
+  height: 60px;
+  display: block;
+  right: 50%;
+}
+
+div.navbar ul li img:hover {
+  transform: scale(1.4);
+}
